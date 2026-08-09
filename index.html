@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMRAAN FM</title>
+  <meta name="description" content="A fan-made Emraan Hashmi radio experience.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="brand">EMRAAN <span>FM</span></div>
+      <div class="status" id="status">OFF AIR</div>
+      <h1>Only Emraan.</h1>
+      <p>No search. No browsing. Press play and let the radio decide.</p>
+    </section>
+
+    <section class="player-card">
+      <div class="art">
+        <div class="film-strip"></div>
+        <div class="initials">EH</div>
+      </div>
+
+      <div class="info">
+        <div class="eyebrow">NOW PLAYING</div>
+        <h2 id="title">Emraan Hashmi Radio</h2>
+        <p id="movie">Press play to start</p>
+
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+
+        <div class="time">
+          <span id="elapsed">0:00</span>
+          <span id="duration">--:--</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button class="round" id="back" aria-label="Previous song">↶</button>
+      <button class="play" id="play" aria-label="Play">▶</button>
+      <button class="round" id="next" aria-label="Next song">↷</button>
+    </section>
+
+    <section class="next">
+      <div>
+        <span class="eyebrow">RADIO PLAYLIST</span>
+        <strong>Emraan Hashmi playlist</strong>
+      </div>
+      <div class="radio-dot"></div>
+    </section>
+
+    <div id="player"></div>
+
+    <footer>
+      <span>EMRAAN FM · fan-made concept</span>
+      <span>Playback powered by YouTube</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
